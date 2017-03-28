@@ -1,0 +1,19 @@
+<h1>
+  {{title}}
+</h1>
+
+<label>AC:</label>
+<input type="text" name="AC" [(ngModel)]="AC"/>
+<label>HP:</label>
+<input type="text" name="HP" [(ngModel)]="HP"/>
+Defense Rating: 
+{{defenseRating}}
+<label>Attack Bonus</label>
+<input type="text" name="attBonus" [(ngModel)]="attBonus"/>
+<label>Average Damage</label>
+<input type="text" name="avgDamage" [(ngModel)]="avgDamage"/>
+Offense Rating:
+{{offenseRating}}
+<hr/>
+<button (click)="calculateChallenge()">Calculate!</button>
+<strong>Calculated Challenge Rating:</strong> {{challenge}}
