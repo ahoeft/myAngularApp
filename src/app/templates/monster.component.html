@@ -3,17 +3,17 @@
 </h1>
 
 <label>AC:</label>
-<input type="text" name="AC" [(ngModel)]="AC"/>
+<input type="text" name="AC" [(ngModel)]="AC"/> <br>
 <label>HP:</label>
-<input type="text" name="HP" [(ngModel)]="HP"/>
-Defense Rating: 
-{{defenseRating}}
-<label>Attack Bonus</label>
-<input type="text" name="attBonus" [(ngModel)]="attBonus"/>
-<label>Average Damage</label>
-<input type="text" name="avgDamage" [(ngModel)]="avgDamage"/>
-Offense Rating:
+<input type="text" name="HP" [(ngModel)]="HP"/><br>
+<strong>Defense Rating:</strong> 
+{{defenseRating}}<hr/>
+<label>Attack Bonus:</label>
+<input type="text" name="attBonus" [(ngModel)]="attBonus"/> <br>
+<label>Average Damage:</label>
+<input type="text" name="avgDamage" [(ngModel)]="avgDamage"/> <br>
+<strong>Offense Rating:</strong>
 {{offenseRating}}
 <hr/>
-<button (click)="calculateChallenge()">Calculate!</button>
 <strong>Calculated Challenge Rating:</strong> {{challenge}}
+<button (click)="calculateChallenge()">Calculate!</button>
