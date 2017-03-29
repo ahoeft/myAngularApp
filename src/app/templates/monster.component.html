@@ -1,19 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<h1 class="titleBar">{{title}}</h1>
+<br>
+<div class="formContainer">  
+    <input type="text" name="AC" [(ngModel)]="AC"/><label> AC</label><br>
+    <input type="text" name="HP" [(ngModel)]="HP"/><label> HP</label><br>
+    <strong>Defense Rating:</strong> 
+    {{defenseRating}}
+</div>
 
-<label>AC:</label>
-<input type="text" name="AC" [(ngModel)]="AC"/> <br>
-<label>HP:</label>
-<input type="text" name="HP" [(ngModel)]="HP"/><br>
-<strong>Defense Rating:</strong> 
-{{defenseRating}}<hr/>
-<label>Attack Bonus:</label>
-<input type="text" name="attBonus" [(ngModel)]="attBonus"/> <br>
-<label>Average Damage:</label>
-<input type="text" name="avgDamage" [(ngModel)]="avgDamage"/> <br>
-<strong>Offense Rating:</strong>
-{{offenseRating}}
-<hr/>
-<strong>Calculated Challenge Rating:</strong> {{challenge}}
-<button (click)="calculateChallenge()">Calculate!</button>
+<div class="formContainer">
+    <input type="text" name="attBonus" [(ngModel)]="attBonus"/><label> Attack Bonus</label><br>  
+    <input type="text" name="avgDamage" [(ngModel)]="avgDamage"/><label> Average Damage</label><br>
+    <strong>Offense Rating:</strong>
+    {{offenseRating}}
+</div>
+<br>
+<div class="formContainer"><strong>Calculated Challenge Rating:</strong> {{challenge}}</div>
+<div><button (click)="calculateChallenge()" class="btn"><strong>Calculate</strong></button></div>

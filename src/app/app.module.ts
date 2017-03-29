@@ -4,17 +4,24 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { MonsterComponent } from './components/monstercalc.component'
+import { HomeComponent } from './components/home.component';
+import { MonsterComponent } from './components/monstercalc.component';
+import { AboutComponent } from './components/about.component';
+
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MonsterComponent
+    MonsterComponent,
+    AboutComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
