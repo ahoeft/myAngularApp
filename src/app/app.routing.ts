@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home.component';
 import { MonsterComponent } from './components/monstercalc.component';
 import { AboutComponent } from './components/about.component';
 import { TreasureComponent } from './components/treasure.component';
+import { MapBuilderComponent } from './components/mapbuilder.component';
 
 const appRoutes: Routes = [
     {
@@ -18,6 +19,10 @@ const appRoutes: Routes = [
     {
         path: 'treasure',
         component: TreasureComponent
+    },
+    {
+        path: 'mapbuilder',
+        component: MapBuilderComponent
     },
     {
         path: 'about',

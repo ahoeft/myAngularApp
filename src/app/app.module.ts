@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home.component';
 import { MonsterComponent } from './components/monstercalc.component';
 import { AboutComponent } from './components/about.component';
 import { TreasureComponent } from './components/treasure.component';
+import { MapBuilderComponent } from './components/mapbuilder.component';
 
 import { routing } from './app.routing';
 
@@ -17,7 +18,8 @@ import { routing } from './app.routing';
     MonsterComponent,
     AboutComponent,
     HomeComponent,
-    TreasureComponent
+    TreasureComponent,
+    MapBuilderComponent
   ],
   imports: [
     BrowserModule,
