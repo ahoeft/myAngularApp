@@ -53,6 +53,7 @@ dark green - #088A29
   box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
   
   background-color: #2EFE64;
+  cursor: pointer;
   
   transition: background-color .3s;
 }

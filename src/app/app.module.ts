@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home.component';
 import { MonsterComponent } from './components/monstercalc.component';
 import { AboutComponent } from './components/about.component';
+import { TreasureComponent } from './components/treasure.component';
 
 import { routing } from './app.routing';
 
@@ -15,7 +16,8 @@ import { routing } from './app.routing';
     AppComponent,
     MonsterComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    TreasureComponent
   ],
   imports: [
     BrowserModule,
