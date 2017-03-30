@@ -9,6 +9,7 @@ import { MonsterComponent } from './components/monstercalc.component';
 import { AboutComponent } from './components/about.component';
 import { TreasureComponent } from './components/treasure.component';
 import { MapBuilderComponent } from './components/mapbuilder.component';
+import { NavBarComponent } from './components/navbar.component';
 
 import { routing } from './app.routing';
 
@@ -19,7 +20,8 @@ import { routing } from './app.routing';
     AboutComponent,
     HomeComponent,
     TreasureComponent,
-    MapBuilderComponent
+    MapBuilderComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

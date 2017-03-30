@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavBarComponent } from './navbar.component'
 
 @Component({
   selector: 'home',

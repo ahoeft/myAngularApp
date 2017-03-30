@@ -1,12 +1,6 @@
 <h1 class="titleBar">{{title}}</h1>
 <br>
-<ul class="navBar">
-    <li class="navBtnContainer"><a class="navBtn" href="">Home</a></li>
-    <li class="navBtnContainer"><a class="active" href="monster">Monster Calculator</a></li>
-    <li class="navBtnContainer"><a class="navBtn" href="treasure">Treasure Generator</a></li>
-    <li class="navBtnContainer"><a class="navBtn" href="mapbuilder">Map Builder</a></li>
-    <li class="navBtnContainer"><a class="navBtn" href="about">About</a></li>
-</ul>
+<navbar></navbar>
 <br>
 <div class="formContainer">  
     <input type="text" name="AC" [(ngModel)]="AC"/><label> AC</label><br>
@@ -24,5 +18,8 @@
     {{offenseRating}}
 </div>
 <br>
-<div class="formContainer"><strong>Calculated Challenge Rating:</strong> {{challenge}}</div>
-<div><button (click)="calculateChallenge()" class="btn"><strong>Calculate</strong></button></div>
+<div class="formContainer">
+    <strong>Calculated Challenge Rating:</strong> {{challenge}}
+    <hr class="style13">
+    <button (click)="calculateChallenge()" class="btn"><strong>Calculate</strong></button>
+</div>
